@@ -166,7 +166,7 @@ A printable enclosure and modular link wristband are included in [`3d-models/`](
 1. Wire up the hardware per the [Hardware](#hardware) section above.
 2. Open `firmware/smartwatch.ino` in Arduino IDE, install the required libraries, select the ESP32-C3 board, and flash.
 3. Confirm over Serial Monitor (115200 baud) that both `MAX30102 OK` and `MPU6050 OK` print, and that BLE begins advertising as `SmartWatch`.
-4. Open `android_app/` in Android Studio, build, and install on a phone running Android 8.0 (API 26) or later.
+4. Open `android_app/` in Android Studio, build, and install on a phone running Android 8.0 (API 26) or later — or skip building it yourself and install the pre-built [`releases/app-debug.apk`](releases/app-debug.apk) directly (debug build, so you'll need to allow installs from unknown sources / sideloading).
 5. Launch the app, grant Bluetooth + Location permissions, and tap **SCAN** to connect.
 6. Wear the watch and hold still for the 3-minute calibration countdown shown on both the watch display and the app before relying on the drowsiness score.
 
@@ -186,6 +186,8 @@ A printable enclosure and modular link wristband are included in [`3d-models/`](
 │       └── build.gradle
 ├── docs/
 │   └── HRV_Tilt_Drowsiness_Reference.pdf   # Formulas, algorithm derivation, error margins
+├── releases/
+│   └── app-debug.apk                       # Pre-built debug APK, ready to sideload
 └── 3d-models/
     ├── watchcase_new.3mf                              # Printable case assembly
     ├── prizma_wristband_144mm_plus4links.stl           # Wristband, larger size
