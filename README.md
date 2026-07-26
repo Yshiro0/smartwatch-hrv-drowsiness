@@ -153,6 +153,14 @@ e.g. `14.083200,121.145600,42.3` — parsed on the watch by splitting on the fir
 
 ---
 
+## 3D-printed case & strap
+
+<img src="3d-models/renders/case_iso.png" width="360"/> <img src="3d-models/renders/wristband_4links.png" width="360"/>
+
+A printable enclosure and modular link wristband are included in [`3d-models/`](3d-models/), along with preview renders and approximate dimensions for each part. See [`3d-models/README.md`](3d-models/README.md) for details.
+
+---
+
 ## Getting started
 
 1. Wire up the hardware per the [Hardware](#hardware) section above.
@@ -176,8 +184,13 @@ e.g. `14.083200,121.145600,42.3` — parsed on the watch by splitting on the fir
 │       ├── src/main/java/.../MainActivity.kt   # BLE client, GPS, alerts, dashboard logic
 │       ├── src/main/res/                        # Layouts, colors, drawables
 │       └── build.gradle
-└── docs/
-    └── HRV_Tilt_Drowsiness_Reference.pdf   # Formulas, algorithm derivation, error margins
+├── docs/
+│   └── HRV_Tilt_Drowsiness_Reference.pdf   # Formulas, algorithm derivation, error margins
+└── 3d-models/
+    ├── watchcase_new.3mf                              # Printable case assembly
+    ├── prizma_wristband_144mm_plus4links.stl           # Wristband, larger size
+    ├── prizma_wristband_144mm_plus2links.stl           # Wristband, smaller size
+    └── renders/                                        # Preview images of the above
 ```
 
 ---
