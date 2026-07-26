@@ -1,0 +1,18 @@
+# Android
+*.iml
+.gradle/
+/local.properties
+.idea/
+.DS_Store
+/build
+/captures
+.externalNativeBuild
+.cxx
+android_app/.gradle/
+android_app/app/build/
+android_app/build/
+
+# Arduino
+*.o
+*.elf
+*.bin
